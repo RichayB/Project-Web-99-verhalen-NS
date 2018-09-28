@@ -1,0 +1,373 @@
+/* "I like working with ID's and classes, but because of the assignment criteria I tried to work with selectors as much as possible. I personally find this often disadvantageous, because in some cases seeing a selector in your code doesn't tell you a lot. You might even end up with lots of very long selectors which can make the entire code unnecessarily long and unclear. Also, changing up the HTML afterwards might mess everything up if you have only worked with selectors. Seeing a logical ID/class name works better for me in most cases. Of course I understand the goal of the assignment is to learn to work with selectors, which is something I've been able to do for a while."  - Richay Bikhari */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Horizontal flex*/
+body > header, nav, .cta_yellow, .cta_grey, main > section, .filter_sort, article > footer, article > footer * {
+	display: flex;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+}
+
+/* Vertical flex */
+body, main, main > header {
+	display: flex;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+	flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+}
+
+/* Center flex content */
+body > header, nav, main, .cta_yellow, .cta_grey {
+	justify-content: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+	align-items: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+        -ms-grid-row-align: center;
+}
+
+/* Generic styles */
+body {
+    font-family: 'Segoe UI', 'Myriad', sans-serif;
+    background: #E6E6E9;
+    color: #060922;
+    line-height: 1.5625rem;
+}
+
+.icon {
+    width: 1.5625rem;
+    height: 1.5625rem;
+    background: initial;
+    border: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1, h2, h3, h4 {
+    color: #003082;
+}
+
+    h1 {
+        font-weight: 300;
+        font-size: 2em;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 2em;
+        margin: 1rem 0 1rem 0;
+        margin-bottom: 1.5625rem;
+    }
+
+    h3 {
+        font-weight: 300;
+        font-size: 2em;
+        margin-bottom: 1rem;
+    }
+
+    h4 {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.5625rem;
+        margin-bottom: .625rem;
+    }
+
+p {
+    margin-bottom: 1em;
+    color: #060922;
+}
+
+a {
+    text-decoration: none;
+    color: #0079D3;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Call-to-action buttons */
+.cta_yellow {
+    width: 100%;
+    height: 2.8125em;
+    background: #FFC917;
+    color: #003082;
+    font-size: 1em;
+    border: none;
+    box-shadow: 0 0.2em #FFB519;
+    transition: all 0.1s;
+}
+
+    .cta_yellow:hover {
+        background: #FFB519;
+    }
+
+.cta_grey {
+    width: 100%;
+    height: 2.8125em;
+    background: #FFF;
+    color: #003082;
+    font-size: 1em;
+    border: none;
+    box-shadow: 0 0.2em #F3F3F4;
+}
+
+    .cta_grey:hover {
+        background: #F3F3F4;
+    }
+
+/* Page styles */
+body > header {
+    min-height: 3.75em;
+    width: 100%;
+    background: #FFF;
+    box-sizing: border-box;
+    padding: 0 .875em;
+    box-shadow: 0 0.125rem 0 0 rgba(7,7,33,.15);
+    z-index: 10;
+    position: fixed;
+    top: 0;
+}
+
+    header img {
+        height: 1.25em;
+    }
+    
+    nav {
+        margin-left: auto;
+    }
+        
+        /* Search icon */
+        nav *:nth-child(1) {
+            background-image: url('../images/search.svg');
+        }
+
+        /* Profile icon */
+        nav *:nth-child(2) {
+            background-image: url('../images/profile.svg');
+        }
+    
+        nav a:not(:first-child) {
+            margin-left: 1em;
+        }
+
+body > div:first-of-type {
+    background-size: cover;
+    background-position: center;
+    margin-top: 3.75em;
+}
+
+    #home_page_banner {
+        background-image: url('../images/phone_trainstation.jpg');
+        height: 18.75em;
+    }
+    
+    #stories_page_banner {
+        background-image: url('../images/search.jpg');
+        height: calc(18.75em / 2);
+    }    
+
+/* Main content */
+main {
+    padding: 0 .4375em;
+    position: relative;
+    top: -3.25em;
+    margin-bottom: -3.25em;
+}
+
+    main > header {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+        
+        #home_page_intro {
+            background: #003082;
+            color: #FFF;
+        }
+
+        #stories_page_intro {
+            background: #FFC917;
+            color: #003082;
+        }
+
+        main > header h1, main > header p {
+            color: inherit;
+        }
+     
+    main > section {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+        /* Filter buttons */
+        main > *:nth-child(2) {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+            
+            main > *:nth-child(2) > *:nth-child(1) {
+                margin-right: calc(0.4375em / 2);
+            }
+
+            main > *:nth-child(2) > *:nth-child(2) {
+                margin-left: calc(0.4375em / 2);
+            }
+    
+        /* Story */
+        article {
+            background: #FFF;
+            width: 100%;
+            margin-bottom: 1em;
+            box-shadow: 0 0.125em rgba(7,7,33,0.15);
+        }
+
+        
+            /* Story header */
+            article > header {
+                height: 8.75em;
+                background-image: url('../images/phone_trainstation.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+
+                #alzheimer_header {
+                    background-image: url('../images/blurred.jpg');
+                }
+            
+            /* Story text content */
+            article > div {
+                padding: 2em;
+            }
+
+            /* Story footer */
+            article > footer {
+                background: #F3F3F4;
+                padding: 1em;
+            }
+
+                    /* Seperately: likes, comment and duration */
+                    article > footer > div:nth-child(1) > div {
+                        margin-right: 1em;
+                    }
+
+                        /* Like/comment/duration icon */
+                        article > footer > div:nth-child(1) > div > *:first-child {
+                            margin-right: 0.4375em;
+                        }
+
+                        /* Like/comment/duration counter */
+                        article > footer > div:nth-child(1) > div > *:nth-child(2) {
+                            color: #003082;
+                            font-size: 1.5625em;
+                            margin-bottom: 0;
+                            line-height: 0.9375em;
+                        }
+
+                            /* Like icon */
+                            article > footer > div > div:nth-child(1) *.icon {
+                                background-image: url('../images/like.svg');
+                            }
+
+                            /* Comment icon */
+                            article > footer > div > div:nth-child(2) *.icon {
+                                background-image: url('../images/comment.svg');
+                            }
+
+                            /* Clock icon */
+                            article > footer > div > div:nth-child(3) *.icon {
+                                background-image: url('../images/clock.svg');
+                            }
+
+                /* Bookmark container */
+                article > footer > div:nth-child(2) {
+                    margin-left: auto;
+                }
+
+                            /* Bookmark icon */
+                            article > footer > div:nth-child(2) button {
+                                background-image: url('../images/bookmark.svg');
+                            }
+
+/* Footer */
+footer {
+    background: #FFF;
+    padding: 2em calc(0.4375em + 2em) 1em calc(0.4375em + 2em); /* Main padding + element padding */
+}
+
+    footer ul {
+        margin-bottom: 2em;
+    }
+    
+    footer ul:last-child {
+        margin-bottom: 0em;
+    }
+    
+    footer ul:last-child a {
+        color: #6A6A7A;
+    }
+    
+    footer ul li {
+        display: flex;
+        flex-direction: row;
+	    align-items: center;
+        margin-bottom: 0.5em;
+    }
+    
+        footer ul li:hover > a {
+            color: #003082;
+            transition: all 0.1s;
+        }
+
+            /* Footer list arrows */
+            footer ul li::before { 
+                content: '';
+
+                display: flex;
+                width: 0.6375em;
+                height: 0.6375em;
+                background-image: url(../images/right-arrow-light-blue.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-right: 0.9375em; /* margin-right */
+                position: relative;
+                transition: all 0.1s;
+            }
+
+            /* Last footer list arrows */
+            footer ul:last-child li::before { 
+                background-image: url(../images/right-arrow-dark-grey.svg);
+            }
+
+                footer ul li:hover::before {
+
+                    margin-left: 0.3125em; /* margin-left */
+                    margin-right: calc(0.9375em - 0.3125em); /* margin-right - margin-left) */
+        /*            background-image: url(../images/right-arrow-dark-blue.svg);*/
+                }
+    /* Footer horizontal line break */
+    footer hr {
+        margin-bottom: 2em;
+        border-style: solid;
+        border-width: 0.0625em 0 0 0;
+        border-color: #E6E6E9;
+    }
