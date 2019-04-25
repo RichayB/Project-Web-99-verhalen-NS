@@ -835,6 +835,7 @@ main {
 		width: 100%;
 		align-items: center;
 		padding: 0;
+		overflow: hidden;
 	}
 	
 		.full_story > img {

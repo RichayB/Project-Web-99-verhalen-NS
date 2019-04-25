@@ -135,17 +135,17 @@
 						<!--Likes-->
 						<div>
 							<button class="icon" type="button"></button> <!--Like icon-->
-							<span>1</span> <!--Like counter-->
+							<span>46</span> <!--Like counter-->
 						</div>
 						<!--Comments-->
 						<div>
 							<a class="icon" href=""></a> <!--Comment icon-->
-							<span>2</span> <!--Comment counter-->
+							<span>25</span> <!--Comment counter-->
 						</div>
 						<!--Duration-->
 						<div>
 							<span class="icon"></span> <!--Duration icon-->
-							<span>03:00</span> <!--Duration counter-->
+							<span>05:00</span> <!--Duration counter-->
 						</div>
 					</div>
 					<!--Bookmark-->
@@ -169,17 +169,17 @@
 						<!--Likes-->
 						<div>
 							<button class="icon" type="button"></button> <!--Like icon-->
-							<span>1</span> <!--Like counter-->
+							<span>35</span> <!--Like counter-->
 						</div>
 						<!--Comments-->
 						<div>
 							<a class="icon" href=""></a> <!--Comment icon-->
-							<span>2</span> <!--Comment counter-->
+							<span>14</span> <!--Comment counter-->
 						</div>
 						<!--Duration-->
 						<div>
 							<span class="icon"></span> <!--Duration icon-->
-							<span>03:00</span> <!--Duration counter-->
+							<span>05:00</span> <!--Duration counter-->
 						</div>
 					</div>
 					<!--Bookmark-->
@@ -203,17 +203,17 @@
 						<!--Likes-->
 						<div>
 							<button class="icon" type="button"></button> <!--Like icon-->
-							<span>1</span> <!--Like counter-->
+							<span>27</span> <!--Like counter-->
 						</div>
 						<!--Comments-->
 						<div>
 							<a class="icon" href=""></a> <!--Comment icon-->
-							<span>2</span> <!--Comment counter-->
+							<span>13</span> <!--Comment counter-->
 						</div>
 						<!--Duration-->
 						<div>
 							<span class="icon"></span> <!--Duration icon-->
-							<span>03:00</span> <!--Duration counter-->
+							<span>10:00</span> <!--Duration counter-->
 						</div>
 					</div>
 					<!--Bookmark-->
@@ -237,17 +237,17 @@
 						<!--Likes-->
 						<div>
 							<button class="icon" type="button"></button> <!--Like icon-->
-							<span>1</span> <!--Like counter-->
+							<span>25</span> <!--Like counter-->
 						</div>
 						<!--Comments-->
 						<div>
 							<a class="icon" href=""></a> <!--Comment icon-->
-							<span>2</span> <!--Comment counter-->
+							<span>24</span> <!--Comment counter-->
 						</div>
 						<!--Duration-->
 						<div>
 							<span class="icon"></span> <!--Duration icon-->
-							<span>03:00</span> <!--Duration counter-->
+							<span>05:00</span> <!--Duration counter-->
 						</div>
 					</div>
 					<!--Bookmark-->
@@ -271,17 +271,17 @@
 						<!--Likes-->
 						<div>
 							<button class="icon" type="button"></button> <!--Like icon-->
-							<span>1</span> <!--Like counter-->
+							<span>18</span> <!--Like counter-->
 						</div>
 						<!--Comments-->
 						<div>
 							<a class="icon" href=""></a> <!--Comment icon-->
-							<span>2</span> <!--Comment counter-->
+							<span>9</span> <!--Comment counter-->
 						</div>
 						<!--Duration-->
 						<div>
 							<span class="icon"></span> <!--Duration icon-->
-							<span>03:00</span> <!--Duration counter-->
+							<span>05:00</span> <!--Duration counter-->
 						</div>
 					</div>
 					<!--Bookmark-->
@@ -305,12 +305,12 @@
 						<!--Likes-->
 						<div>
 							<button class="icon" type="button"></button> <!--Like icon-->
-							<span>1</span> <!--Like counter-->
+							<span>14</span> <!--Like counter-->
 						</div>
 						<!--Comments-->
 						<div>
 							<a class="icon" href=""></a> <!--Comment icon-->
-							<span>2</span> <!--Comment counter-->
+							<span>5</span> <!--Comment counter-->
 						</div>
 						<!--Duration-->
 						<div>
@@ -324,7 +324,6 @@
 					</div>
 				</footer>
 			</article>
-            <!--Future plans: More articles will be generated using JavaScript-->
         </section>
         </section>
         <footer>
